@@ -42,7 +42,7 @@ fun main() {
 
 using System;
 
-public class Challenge01
+public class Challenge02
 {
     public static void Main(string[] args)
     {
