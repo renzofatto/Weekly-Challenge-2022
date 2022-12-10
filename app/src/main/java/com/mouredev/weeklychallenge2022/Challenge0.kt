@@ -46,6 +46,10 @@ public class Challenge00
 {
     public static void Main(string[] args)
     {
+        FizzBuzz();
+    }
+    
+    private static void FizzBuzz(){
         for(int i=0;i<=100; i++ ){
             if (multiplo5y3(i)){
                 Console.WriteLine("fizzbuzz");
