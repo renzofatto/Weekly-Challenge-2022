@@ -39,3 +39,33 @@ fun main() {
 //---------------------------------------------------
 //C#
 //---------------------------------------------------
+
+using System;
+
+public class Challenge00
+{
+    public static void Main(string[] args)
+    {
+        for(int i=0;i<=100; i++ ){
+            if (multiplo5y3(i)){
+                Console.WriteLine("fizzbuzz");
+            }else if(multiplo3(i)){
+                Console.WriteLine("fizz");
+            }else if (multiplo5(i)){
+                Console.WriteLine("buzz");
+            }else{
+                Console.WriteLine(i);
+            }
+        }
+    }
+    
+    private static bool multiplo5 (int num){
+        return (num%5 == 0);
+    }
+    private static bool multiplo3 (int num){
+        return (num%3 == 0);
+    }
+    private static bool multiplo5y3 (int num){
+        return (multiplo5(num) && multiplo3(num));
+    }
+}
