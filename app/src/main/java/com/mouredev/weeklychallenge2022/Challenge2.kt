@@ -35,3 +35,30 @@ fun main() {
         n1 = fib
     }
 }
+
+//---------------------------------------------------
+//C#
+//---------------------------------------------------
+
+using System;
+
+public class Challenge01
+{
+    public static void Main(string[] args)
+    {
+        Fibonacci();
+    }
+    
+    private static void Fibonacci(){
+        int[] array = new int[50];
+        array[0] = 0;
+        array[1] = 1;
+        for(int i=2; i<50; i++){
+            array[i] = array[i-1]+array[i-2];
+        }
+        for(int j=0; j<50; j++){
+            Console.Write(array[j]);
+            Console.Write(", ");
+        }
+    }
+}
