@@ -42,5 +42,29 @@ private fun isPrime(number: Int): Boolean {
     return true
 }
 
+//---------------------------------------------------
+//C#
+//---------------------------------------------------
 
+using System;
+
+public class Challenge03
+{
+    public static void Main(string[] args)
+    {
+        Console.Write(EsPrimo(8));
+    }
+    
+    private static bool EsPrimo(int num){
+        if (num<2){
+            return true;
+        }
+        for (int i=2; i<num; i++){
+            if (num%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
 
